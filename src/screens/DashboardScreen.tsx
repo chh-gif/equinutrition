@@ -14,7 +14,7 @@ function DashboardScreen() {
 
       <TouchableOpacity
         style={styles.card}
-        onPress={() => router.push("/paard")}
+        onPress={() => router.push("/horse")}
       >
         <Text style={styles.cardTitle}>
           🐴 Mijn Paard
@@ -25,11 +25,13 @@ function DashboardScreen() {
         </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.card}>
-        <Text style={styles.cardTitle}>
+<TouchableOpacity
+  style={styles.card}
+  onPress={() => router.push("/feedingplan")}
+>
+<Text style={styles.cardTitle}>
           🌾 Voederplan
         </Text>
-
         <Text style={styles.cardText}>
           Dagelijkse voeding bekijken
         </Text>
