@@ -1,27 +1,51 @@
-import { View, Text } from "react-native";
+import React from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import { router } from "expo-router";
+import { styles } from "../app/styles/dashboardStyles";
 
-export default function DashboardScreen() {
+function DashboardScreen() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#FFF8F3",
-      }}
-    >
-      <Text
-        style={{
-          fontSize: 28,
-          fontWeight: "bold",
-        }}
-      >
-        Hallo, Max 👋
+    <View style={styles.container}>
+      <Text style={styles.title}>Dashboard</Text>
+
+      <Text style={styles.subtitle}>
+        Welkom terug!
       </Text>
 
-      <Text style={{ marginTop: 10 }}>
-        Fijn dat je er bent!
-      </Text>
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() => router.push("/paard")}
+      >
+        <Text style={styles.cardTitle}>
+          🐴 Mijn Paard
+        </Text>
+
+        <Text style={styles.cardText}>
+          Bekijk gegevens van je paard
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.card}>
+        <Text style={styles.cardTitle}>
+          🌾 Voederplan
+        </Text>
+
+        <Text style={styles.cardText}>
+          Dagelijkse voeding bekijken
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.card}>
+        <Text style={styles.cardTitle}>
+          ⚙️ Instellingen
+        </Text>
+
+        <Text style={styles.cardText}>
+          App instellingen aanpassen
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 }
+
+export default DashboardScreen;
