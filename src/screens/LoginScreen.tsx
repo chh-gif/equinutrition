@@ -2,6 +2,8 @@ import React from "react";
 import { View,  Text,  TextInput,  TouchableOpacity,} from "react-native";
 import { router } from "expo-router";
 
+import styles from "../styles/loginStyles";
+
 function LoginScreen() {
   return (
     <View

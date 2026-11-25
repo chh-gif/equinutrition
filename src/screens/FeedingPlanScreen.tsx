@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import styles from "../app/styles/feedingPlanStyles";
+import styles from "../styles/feedingPlanStyles";
 
 function FeedingPlanScreen() {
   const [activeTab, setActiveTab] = useState("vandaag");

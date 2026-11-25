@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
-import { styles } from "../app/styles/dashboardStyles";
+import styles  from "../styles/dashboardStyles";
 
 function DashboardScreen() {
   return (
@@ -37,6 +37,21 @@ function DashboardScreen() {
         </Text>
       </TouchableOpacity>
 
+
+      <TouchableOpacity
+  style={styles.card}
+  onPress={() => router.push("/reminder")}
+>
+  <Text style={styles.cardTitle}>
+    🔔 Herinneringen
+  </Text>
+
+  <Text style={styles.cardText}>
+    Voedermomenten beheren
+  </Text>
+</TouchableOpacity>
+
+
       <TouchableOpacity style={styles.card } onPress={() => router.push("/settings")}>
         <Text style={styles.cardTitle}>
           ⚙️ Instellingen
@@ -46,6 +61,7 @@ function DashboardScreen() {
           App instellingen aanpassen
         </Text>
       </TouchableOpacity>
+
     </View>
   );
 }
