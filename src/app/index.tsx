@@ -1,5 +1,7 @@
 import LoginScreen from "../screens/LoginScreen";
 
-export default function Home() {
+function Home() {
   return <LoginScreen />;
 }
+
+export default Home;

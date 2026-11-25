@@ -1,7 +1,7 @@
-import VoederplanScreen from "../screens/FeedingPlanScreen";
+import FeedingPlanScreen from "../screens/FeedingPlanScreen";
 
-function VoederplanPage() {
-  return <VoederplanScreen />;
+function FeedingPlanPage() {
+  return <FeedingPlanScreen />;
 }
 
-export default VoederplanPage;
+export default FeedingPlanPage;

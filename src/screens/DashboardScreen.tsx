@@ -25,9 +25,9 @@ function DashboardScreen() {
         </Text>
       </TouchableOpacity>
 
-<TouchableOpacity
-  style={styles.card}
-  onPress={() => router.push("/feedingplan")}
+
+
+<TouchableOpacity style={styles.card} onPress={() => router.push("/feedingplan")}
 >
 <Text style={styles.cardTitle}>
           🌾 Voederplan
@@ -37,7 +37,7 @@ function DashboardScreen() {
         </Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity style={styles.card } onPress={() => router.push("/settings")}>
         <Text style={styles.cardTitle}>
           ⚙️ Instellingen
         </Text>

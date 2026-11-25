@@ -1,5 +1,7 @@
 import DashboardScreen from "../screens/DashboardScreen";
 
-export default function Dashboard() {
+function Dashboard() {
   return <DashboardScreen />;
 }
+
+export default Dashboard;

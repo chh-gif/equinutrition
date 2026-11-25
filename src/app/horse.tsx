@@ -1,5 +1,7 @@
 import HorseScreen from "../screens/HorseScreen";
 
-export default function PaardPage() {
+function HorsePage() {
   return <HorseScreen />;
 }
+
+export default HorsePage;
